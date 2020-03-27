@@ -1,4 +1,2 @@
 # androiddata
-first submit code!
-
-adnroid 工具测试项目
+Java/Adnroid 工具集合
