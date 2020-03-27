@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="main_type">
+        <item>MVC/MVP/MVVM架构设计模式</item>
+    </array>
+    <array name="main_sjms">
+        <item>无任何架构设计模式</item>
+        <item>MVC架构设计模式</item>
+        <item>MVP架构设计模式</item>
+        <item>MVVM架构设计模式</item>
+    </array>
+</resources>

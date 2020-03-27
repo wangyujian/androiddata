@@ -3,13 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    tools:context="com.example.yujan.android_data.MainActivity">
+    android:orientation="vertical"
+    tools:context="com.example.yujan.android_data.sjms.SJMSActivity">
 
     <ListView
-        android:id="@+id/lv_type"
+        android:id="@+id/lv_sjms"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:dividerHeight="0dp"
         android:divider="@null"
-        android:dividerHeight="0dp" />
+        android:layout_height="wrap_content" />
 </LinearLayout>
