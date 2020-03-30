@@ -14,7 +14,7 @@ import com.example.yujan.android_data.sjms.callback.LoginCallBack;
 
 import java.util.Random;
 
-public class NormalActivity extends AppCompatActivity {
+public class NormalActivity extends AppCompatActivity implements View.OnClickListener {
     private EditText edt_input;
     private TextView tv_tip;
 
@@ -24,9 +24,13 @@ public class NormalActivity extends AppCompatActivity {
         setContentView(R.layout.activity_normal);
         edt_input = findViewById(R.id.edt_input);
         tv_tip = findViewById(R.id.tv_tip);
-        findViewById(R.id.btn_login).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        findViewById(R.id.btn_login).setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.btn_login:
                 String inputInfo = getUserInputInfo();
                 if (TextUtils.isEmpty(inputInfo)) {
                     Toast.makeText(NormalActivity.this,
@@ -46,8 +50,8 @@ public class NormalActivity extends AppCompatActivity {
                         }
                     });
                 }
-            }
-        });
+                break;
+        }
     }
 
     /**

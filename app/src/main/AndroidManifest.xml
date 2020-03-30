@@ -16,10 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".sjms.MVPActivity" />
+        <activity android:name=".sjms.mvp.MVPActivity" />
         <activity android:name=".sjms.SJMSActivity" />
         <activity android:name=".sjms.NormalActivity" />
-        <activity android:name=".sjms.MVCActivity"></activity>
+        <activity android:name=".sjms.mvc.MVCActivity"/>
     </application>
 
 </manifest>

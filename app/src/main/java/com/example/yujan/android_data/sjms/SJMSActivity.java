@@ -1,15 +1,16 @@
 package com.example.yujan.android_data.sjms;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
-import com.example.yujan.android_data.MainActivity;
 import com.example.yujan.android_data.R;
+import com.example.yujan.android_data.sjms.mvc.MVCActivity;
+import com.example.yujan.android_data.sjms.mvp.MVPActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -59,8 +60,12 @@ public class SJMSActivity extends AppCompatActivity {
                     case 0:
                         startActivity(new Intent(SJMSActivity.this, NormalActivity.class));
                         break;
-                    //MVP架构设计模式
+                    //MVC架构设计模式
                     case 1:
+                        startActivity(new Intent(SJMSActivity.this, MVCActivity.class));
+                        break;
+                    //MVP架构设计模式
+                    case 2:
                         startActivity(new Intent(SJMSActivity.this, MVPActivity.class));
                         break;
                 }
