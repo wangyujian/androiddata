@@ -1,7 +1,7 @@
-package com.example.yujan.android_data.sjms;
+package com.example.yujan.android_data.sjms.mvc;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
@@ -11,12 +11,11 @@ import android.widget.Toast;
 import com.example.yujan.android_data.R;
 import com.example.yujan.android_data.sjms.bean.UserInfoBean;
 import com.example.yujan.android_data.sjms.callback.LoginCallBack;
-import com.example.yujan.android_data.sjms.model.RequestModel;
 
-public class MVCActivity extends AppCompatActivity {
+public class MVCActivity extends AppCompatActivity implements View.OnClickListener {
     private EditText edt_input;
     private TextView tv_tip;
-    private RequestModel requestModel;
+    private IMVCModel requestModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,10 +23,14 @@ public class MVCActivity extends AppCompatActivity {
         setContentView(R.layout.activity_mvc);
         edt_input = findViewById(R.id.edt_input);
         tv_tip = findViewById(R.id.tv_tip);
-        requestModel = new RequestModel();
-        findViewById(R.id.btn_login).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        requestModel = new IMVCModel();
+        findViewById(R.id.btn_login).setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.btn_login:
                 String inputInfo = getUserInputInfo();
                 if (TextUtils.isEmpty(inputInfo)) {
                     Toast.makeText(MVCActivity.this,
@@ -47,8 +50,8 @@ public class MVCActivity extends AppCompatActivity {
                         }
                     });
                 }
-            }
-        });
+                break;
+        }
     }
 
     /**

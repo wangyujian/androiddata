@@ -1,4 +1,4 @@
-package com.example.yujan.android_data.sjms.model;
+package com.example.yujan.android_data.sjms.mvc;
 
 import com.example.yujan.android_data.sjms.bean.UserInfoBean;
 import com.example.yujan.android_data.sjms.callback.LoginCallBack;
@@ -9,7 +9,7 @@ import java.util.Random;
  * Created by yujan on 2020/3/27.
  */
 
-public class RequestModel implements BaseModel {
+public class IMVCModel {
     /**
      * 获取用户登录信息（模拟）
      *
@@ -24,10 +24,5 @@ public class RequestModel implements BaseModel {
         } else {
             callBack.onFailed();
         }
-    }
-
-    @Override
-    public void onDestroy() {
-
     }
 }
