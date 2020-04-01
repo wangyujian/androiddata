@@ -83,7 +83,7 @@ public class NormalActivity extends AppCompatActivity implements View.OnClickLis
      * @param userInfoBean
      */
     private void updateLoginSuccessView(UserInfoBean userInfoBean) {
-        tv_tip.setText("登录转态：用户名："
+        tv_tip.setText("登录转态：\n用户名："
                 + userInfoBean.getName()
                 + ",用户等级："
                 + userInfoBean.getLevel());
@@ -93,6 +93,6 @@ public class NormalActivity extends AppCompatActivity implements View.OnClickLis
      * 登录失败后更新登录状态信息
      */
     private void updateLoginFailView() {
-        tv_tip.setText("登录转态：登录失败");
+        tv_tip.setText("登录转态：\n登录失败");
     }
 }

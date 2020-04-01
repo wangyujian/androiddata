@@ -19,7 +19,8 @@
         <activity android:name=".sjms.mvp.MVPActivity" />
         <activity android:name=".sjms.SJMSActivity" />
         <activity android:name=".sjms.NormalActivity" />
-        <activity android:name=".sjms.mvc.MVCActivity"/>
+        <activity android:name=".sjms.mvc.MVCActivity" />
+        <activity android:name=".sjms.mvvm.MVVMActivity"></activity>
     </application>
 
 </manifest>

@@ -5,7 +5,7 @@ package com.example.yujan.android_data.sjms.bean;
  */
 
 public class UserInfoBean {
-    private String name;
+    private String name="nihao";
     private int level;
 
     public UserInfoBean(String name, int level) {

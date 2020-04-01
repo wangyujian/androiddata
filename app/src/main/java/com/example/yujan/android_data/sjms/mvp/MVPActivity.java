@@ -11,6 +11,16 @@ import android.widget.Toast;
 import com.example.yujan.android_data.R;
 import com.example.yujan.android_data.sjms.bean.UserInfoBean;
 
+/**
+ * 作用：
+ * Model_View_Presenter模型演示
+ * 详情：
+ * MVP跟MVC很相像，文章开头列出了很多种MVC的设计图，所以根据MVC的发展来看，我们把MVP当成MVC来看也不为过，因为MVP也是三层，
+ * 唯一的差别是Model和View之间不进行通讯，都是通过Presenter完成,Presenter负责完成View于Model间的交互和业务逻辑。
+ * 总结：
+ * 实现了视图层的独立，通过中间层Preseter实现了Model和View的完全解耦。MVP彻底解决了MVC中View和Controller傻傻分不清楚的问题，但是随着业务逻辑的增加，
+ * 一个页面可能会非常复杂，UI的改变是非常多，会有非常多的case，这样就会造成View的接口会很庞大。
+ */
 public class MVPActivity extends AppCompatActivity implements View.OnClickListener, IMVPView {
     private EditText edt_input;
     private TextView tv_tip;
@@ -49,7 +59,7 @@ public class MVPActivity extends AppCompatActivity implements View.OnClickListen
 
     @Override
     public void updateLoginSuccessView(UserInfoBean userInfoBean) {
-        tv_tip.setText("登录转态：用户名："
+        tv_tip.setText("登录转态：\n用户名："
                 + userInfoBean.getName()
                 + ",用户等级："
                 + userInfoBean.getLevel());
@@ -57,7 +67,7 @@ public class MVPActivity extends AppCompatActivity implements View.OnClickListen
 
     @Override
     public void updateLoginFailView() {
-        tv_tip.setText("登录转态：登录失败");
+        tv_tip.setText("登录转态：\n登录失败");
     }
 }
 
