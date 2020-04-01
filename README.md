@@ -1,2 +1,2 @@
 # androiddata
-Java/Adnroid 工具集合
+1）MVC/MVP/MVVM
