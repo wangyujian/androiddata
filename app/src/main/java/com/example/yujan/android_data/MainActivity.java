@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
+import com.example.yujan.android_data.netrequest.HttpTestActivity;
 import com.example.yujan.android_data.sjms.SJMSActivity;
 
 import java.util.ArrayList;
@@ -57,6 +58,10 @@ public class MainActivity extends AppCompatActivity {
                     //MVC/MVP/MVVM架构设计模式
                     case 0:
                         startActivity(new Intent(MainActivity.this, SJMSActivity.class));
+                        break;
+                    //网络请求
+                    case 1:
+                        startActivity(new Intent(MainActivity.this, HttpTestActivity.class));
                         break;
                 }
             }
