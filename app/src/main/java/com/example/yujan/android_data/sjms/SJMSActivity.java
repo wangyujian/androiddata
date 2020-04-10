@@ -42,7 +42,7 @@ public class SJMSActivity extends AppCompatActivity {
      */
     private void setData() {
         List<Map<String, Object>> list = new ArrayList<>();
-        String[] types = getResources().getStringArray(R.array.main_sjms);
+        String[] types = getResources().getStringArray(R.array.sjms_type);
         for (int i = 0; i < types.length; i++) {
             Map<String, Object> map = new HashMap<>();
             map.put("type", types[i]);

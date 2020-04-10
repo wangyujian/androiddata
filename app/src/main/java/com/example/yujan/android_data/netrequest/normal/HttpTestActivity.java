@@ -1,4 +1,4 @@
-package com.example.yujan.android_data.netrequest;
+package com.example.yujan.android_data.netrequest.normal;
 
 import android.graphics.Bitmap;
 import android.os.AsyncTask;

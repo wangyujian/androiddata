@@ -4,10 +4,14 @@
         <item>MVC/MVP/MVVM架构设计模式</item>
         <item>网络请求</item>
     </array>
-    <array name="main_sjms">
+    <array name="sjms_type">
         <item>无任何架构设计模式</item>
         <item>MVC架构设计模式</item>
         <item>MVP架构设计模式</item>
         <item>MVVM架构设计模式</item>
+    </array>
+    <array name="net_request_type">
+        <item>普通网络请求</item>
+        <item>OkHttp网络请求</item>
     </array>
 </resources>

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">android-data</string>
+    <string name="okhttp_request_post_description">需求：用户输入用户名和账号登录（https://www.wanandroid.com/user/login?username=wangyujian&amp;password=123456）</string>
 </resources>
