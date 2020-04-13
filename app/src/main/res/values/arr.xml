@@ -3,6 +3,7 @@
     <array name="main_type">
         <item>MVC/MVP/MVVM架构设计模式</item>
         <item>网络请求</item>
+        <item>Json解析</item>
     </array>
     <array name="sjms_type">
         <item>无任何架构设计模式</item>

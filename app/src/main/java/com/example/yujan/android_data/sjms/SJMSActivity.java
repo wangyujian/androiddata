@@ -9,6 +9,7 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
 import com.example.yujan.android_data.R;
+import com.example.yujan.android_data.sjms.base.BaseActivity;
 import com.example.yujan.android_data.sjms.mvc.MVCActivity;
 import com.example.yujan.android_data.sjms.mvp.MVPActivity;
 import com.example.yujan.android_data.sjms.mvvm.MVVMActivity;
@@ -24,7 +25,7 @@ import java.util.Map;
  * 3）对于工具类或者需要写很多业务逻辑app，使用mvp或者mvvm都可。
  * 4）如果想通过一个项目去学习架构和设计模式，建议用MVC然后在此基础上慢慢挖掘改进。最后你可能发现，改进的最终结果可能就变成了mvp，mvvm。
  */
-public class SJMSActivity extends AppCompatActivity {
+public class SJMSActivity extends BaseActivity {
 
     private ListView lv_sjms;
 

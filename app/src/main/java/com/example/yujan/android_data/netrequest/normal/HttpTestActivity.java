@@ -8,8 +8,9 @@ import android.webkit.WebView;
 import android.widget.ImageView;
 
 import com.example.yujan.android_data.R;
+import com.example.yujan.android_data.sjms.base.BaseActivity;
 
-public class HttpTestActivity extends AppCompatActivity {
+public class HttpTestActivity extends BaseActivity {
     private WebView mWebView;
     private ImageView mImageView;
     private SendUrlTask mSendUrlTask;

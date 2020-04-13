@@ -9,6 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.yujan.android_data.R;
+import com.example.yujan.android_data.sjms.base.BaseActivity;
 import com.example.yujan.android_data.sjms.bean.UserInfoBean;
 
 /**
@@ -21,7 +22,7 @@ import com.example.yujan.android_data.sjms.bean.UserInfoBean;
  * 实现了视图层的独立，通过中间层Preseter实现了Model和View的完全解耦。MVP彻底解决了MVC中View和Controller傻傻分不清楚的问题，但是随着业务逻辑的增加，
  * 一个页面可能会非常复杂，UI的改变是非常多，会有非常多的case，这样就会造成View的接口会很庞大。
  */
-public class MVPActivity extends AppCompatActivity implements View.OnClickListener, IMVPView {
+public class MVPActivity extends BaseActivity implements View.OnClickListener, IMVPView {
     private EditText edt_input;
     private TextView tv_tip;
     private IMVPPresenter imvpPresenter;

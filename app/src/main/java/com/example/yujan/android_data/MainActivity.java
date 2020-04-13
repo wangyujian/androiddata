@@ -8,16 +8,18 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
+import com.example.yujan.android_data.jsonparse.JsonParseActivity;
 import com.example.yujan.android_data.netrequest.NetRequestActivity;
 import com.example.yujan.android_data.netrequest.normal.HttpTestActivity;
 import com.example.yujan.android_data.sjms.SJMSActivity;
+import com.example.yujan.android_data.sjms.base.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     private ListView lv_type;
 
@@ -63,6 +65,10 @@ public class MainActivity extends AppCompatActivity {
                     //网络请求
                     case 1:
                         startActivity(new Intent(MainActivity.this, NetRequestActivity.class));
+                        break;
+                    //Json解析
+                    case 2:
+                        startActivity(new Intent(MainActivity.this, JsonParseActivity.class));
                         break;
                 }
             }

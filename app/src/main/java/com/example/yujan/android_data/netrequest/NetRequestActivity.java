@@ -12,6 +12,7 @@ import com.example.yujan.android_data.R;
 import com.example.yujan.android_data.netrequest.normal.HttpTestActivity;
 import com.example.yujan.android_data.netrequest.okhttp.OkhttpRequestActivity;
 import com.example.yujan.android_data.sjms.NormalActivity;
+import com.example.yujan.android_data.sjms.base.BaseActivity;
 import com.example.yujan.android_data.sjms.mvc.MVCActivity;
 
 import java.util.ArrayList;
@@ -19,7 +20,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class NetRequestActivity extends AppCompatActivity {
+public class NetRequestActivity extends BaseActivity {
     private ListView lv_net_request;
 
     @Override

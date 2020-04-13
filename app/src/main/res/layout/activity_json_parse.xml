@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context="com.example.yujan.android_data.sjms.SJMSActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="需求：Json解析"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="详情：模拟生成json字符串，并解析"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_get_json"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生成" />
+
+        <TextView
+            android:id="@+id/tv_result_json"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="json字符串："
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="#f5f5f5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1）android原生API解析"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_parse_api"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="解析" />
+
+        <TextView
+            android:id="@+id/tv_parse_api_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="结果："
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="#f5f5f5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2）Gson解析"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_parse_gson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="解析" />
+
+        <TextView
+            android:id="@+id/tv_parse_gson_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="结果："
+            android:textColor="#666666"
+            android:textSize="12sp" />
+    </LinearLayout>
+</ScrollView>

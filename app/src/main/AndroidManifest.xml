@@ -32,6 +32,7 @@
         <activity
             android:name=".netrequest.okhttp.OkhttpRequestActivity"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity android:name=".jsonparse.JsonParseActivity"></activity>
     </application>
 
 </manifest>

@@ -12,13 +12,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.yujan.android_data.R;
+import com.example.yujan.android_data.sjms.base.BaseActivity;
 
 /**
  * 1）Okhttp之Get请求
  * 需求：获取首页banner（https://www.wanandroid.com/banner/json）的数据
  * 通过开启子线程获取到数据后，到主线程中更新UI
  */
-public class OkhttpRequestActivity extends AppCompatActivity implements View.OnClickListener {
+public class OkhttpRequestActivity extends BaseActivity implements View.OnClickListener {
     private TextView tv_tip;
     private TextView tv_login_result;
     private EditText edt_name;

@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.example.yujan.android_data.R;
 import com.example.yujan.android_data.databinding.ActivityMvvmBinding;
+import com.example.yujan.android_data.sjms.base.BaseActivity;
 
 /**
  * 作用：
@@ -25,7 +26,7 @@ import com.example.yujan.android_data.databinding.ActivityMvvmBinding;
  * 也有可能业务逻辑中对视图属性的修改导致。
  * 如果项目中打算用MVVM的话可以考虑使用官方的架构组件ViewModel、LiveData、DataBinding去实现MVVM
  */
-public class MVVMActivity extends AppCompatActivity {
+public class MVVMActivity extends BaseActivity {
     private ActivityMvvmBinding binding;
 
     @Override

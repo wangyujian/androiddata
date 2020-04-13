@@ -9,12 +9,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.yujan.android_data.R;
+import com.example.yujan.android_data.sjms.base.BaseActivity;
 import com.example.yujan.android_data.sjms.bean.UserInfoBean;
 import com.example.yujan.android_data.sjms.callback.LoginCallBack;
 
 import java.util.Random;
 
-public class NormalActivity extends AppCompatActivity implements View.OnClickListener {
+public class NormalActivity extends BaseActivity implements View.OnClickListener {
     private EditText edt_input;
     private TextView tv_tip;
 
