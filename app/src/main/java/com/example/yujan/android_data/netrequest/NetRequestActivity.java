@@ -11,6 +11,7 @@ import android.widget.SimpleAdapter;
 import com.example.yujan.android_data.R;
 import com.example.yujan.android_data.netrequest.normal.HttpTestActivity;
 import com.example.yujan.android_data.netrequest.okhttp.OkhttpRequestActivity;
+import com.example.yujan.android_data.netrequest.okhttppackage1.OkhttpPackage1Activity;
 import com.example.yujan.android_data.sjms.NormalActivity;
 import com.example.yujan.android_data.sjms.base.BaseActivity;
 import com.example.yujan.android_data.sjms.mvc.MVCActivity;
@@ -65,6 +66,10 @@ public class NetRequestActivity extends BaseActivity {
                     //okhttp网络请求
                     case 1:
                         startActivity(new Intent(NetRequestActivity.this, OkhttpRequestActivity.class));
+                        break;
+                    //okhttp网络请求初步封装
+                    case 2:
+                        startActivity(new Intent(NetRequestActivity.this, OkhttpPackage1Activity.class));
                         break;
                 }
             }

@@ -14,5 +14,6 @@
     <array name="net_request_type">
         <item>普通网络请求</item>
         <item>OkHttp网络请求</item>
+        <item>OkHttp网络请求的初步封装</item>
     </array>
 </resources>

@@ -36,4 +36,6 @@ dependencies {
     implementation("com.squareup.okhttp3:okhttp:4.5.0")
     //Gson
     implementation 'com.google.code.gson:gson:2.8.5'
+    //FastJson（fastjson会不定期发布针对android版本优化的版本，android优化版本是去掉不必要的代码，减少体积，功能和标准版本基本一样）
+    implementation 'com.alibaba:fastjson:1.1.71.android'
 }

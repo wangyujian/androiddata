@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.alibaba.fastjson.JSON;
 import com.example.yujan.android_data.R;
 import com.example.yujan.android_data.sjms.base.BaseActivity;
 import com.google.gson.Gson;
@@ -45,6 +46,7 @@ public class JsonParseActivity extends BaseActivity implements View.OnClickListe
     private TextView tv_result_json;
     private TextView tv_parse_api_result;
     private TextView tv_parse_gson_result;
+    private TextView tv_parse_fastjson_result;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,9 +55,11 @@ public class JsonParseActivity extends BaseActivity implements View.OnClickListe
         tv_result_json = findViewById(R.id.tv_result_json);
         tv_parse_api_result = findViewById(R.id.tv_parse_api_result);
         tv_parse_gson_result = findViewById(R.id.tv_parse_gson_result);
+        tv_parse_fastjson_result = findViewById(R.id.tv_parse_fastjson_result);
         findViewById(R.id.btn_get_json).setOnClickListener(this);
         findViewById(R.id.btn_parse_api).setOnClickListener(this);
         findViewById(R.id.btn_parse_gson).setOnClickListener(this);
+        findViewById(R.id.btn_parse_fastjson).setOnClickListener(this);
     }
 
     @Override
@@ -70,9 +74,18 @@ public class JsonParseActivity extends BaseActivity implements View.OnClickListe
                 break;
             case R.id.btn_parse_gson:
                 if (isJsonStrEmpty()) {
-                    jsonStr = "dasdfasfasdf";
                     UserInfoJsonResultBean resultBean = parseJsonByGson(UserInfoJsonResultBean.class);
-                    tv_parse_gson_result.setText("结果：\n姓名：" + resultBean.getName() + "\n链接：" + resultBean.getUrl());
+                    if (resultBean != null) {
+                        tv_parse_gson_result.setText("结果：\n姓名：" + resultBean.getName() + "\n链接：" + resultBean.getUrl());
+                    }
+                }
+                break;
+            case R.id.btn_parse_fastjson:
+                if (isJsonStrEmpty()) {
+                    UserInfoJsonResultBean resultBean = parseJsonByFastJson(UserInfoJsonResultBean.class);
+                    if (resultBean != null) {
+                        tv_parse_fastjson_result.setText("结果：\n姓名：" + resultBean.getName() + "\n链接：" + resultBean.getUrl());
+                    }
                 }
                 break;
         }
@@ -192,6 +205,21 @@ public class JsonParseActivity extends BaseActivity implements View.OnClickListe
         Gson gson = new Gson();
         try {
             return gson.fromJson(jsonStr, t);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    /**
+     * 利用FastJson解析json
+     * GitHub使用文档（https://github.com/alibaba/fastjson/wiki/Quick-Start-CN）
+     * String text = JSON.toJSONString(obj); //序列化
+     * VO vo = JSON.parseObject("{...}", VO.class); //反序列化
+     */
+    private <T> T parseJsonByFastJson(Class<T> t) {
+        try {
+            return JSON.parseObject(jsonStr, t);
         } catch (Exception e) {
             e.printStackTrace();
         }

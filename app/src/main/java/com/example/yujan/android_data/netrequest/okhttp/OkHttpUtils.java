@@ -23,6 +23,7 @@ public class OkHttpUtils {
      */
     public static void okhttpGetRequestMethod(String url, OkhttpResponCallBack callBack) {
         try {
+
             OkHttpClient client = new OkHttpClient();
 
             Request request = new Request.Builder()
