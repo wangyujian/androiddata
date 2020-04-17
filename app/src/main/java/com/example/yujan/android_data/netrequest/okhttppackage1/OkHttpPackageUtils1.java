@@ -1,5 +1,10 @@
 package com.example.yujan.android_data.netrequest.okhttppackage1;
 
+import android.os.Handler;
+import android.os.Looper;
+
+import com.alibaba.fastjson.JSON;
+
 import java.io.IOException;
 
 import okhttp3.Call;
@@ -14,10 +19,16 @@ import okhttp3.Response;
  */
 
 public class OkHttpPackageUtils1 {
+    private Handler handler;
+    private OkHttpClient okHttpClient;
 
-    public static void sendGetRequestPackage1(String url) {
+    private OkHttpPackageUtils1() {
+        handler = new Handler(Looper.getMainLooper());
         //创建OkHttpClient
-        OkHttpClient okHttpClient = new OkHttpClient();
+        okHttpClient = new OkHttpClient();
+    }
+
+    public void sendGetRequestPackage1(String url, final OkHttpPackage1ResponseCallBack callBack) {
         //创建一个Request
         final Request request = new Request
                 .Builder()
@@ -28,8 +39,15 @@ public class OkHttpPackageUtils1 {
         //请求加入回调
         call.enqueue(new Callback() {
             @Override
-            public void onFailure(Call call, IOException e) {
-                e.printStackTrace();
+            public void onFailure(final Call call, IOException e) {
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        if (callBack != null) {
+//                            callBack.onfailed(request, e);
+                        }
+                    }
+                });
             }
 
             @Override
@@ -40,6 +58,7 @@ public class OkHttpPackageUtils1 {
         });
     }
 
-    public static void sendPostRequestPackage1(String url) {
+    private void onResponFailedResult(final Call call, IOException e) {
+
     }
 }
