@@ -1,15 +1,12 @@
 package com.example.yujan.android_data.base;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Application;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Looper;
-import android.support.annotation.MainThread;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.example.yujan.android_data.MainActivity;
 import com.example.yujan.android_data.activitymanger.ActivityManger;
@@ -41,8 +38,7 @@ public class AppContext extends Application {
                             .setPositiveButton("确定", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
-                                    restartApp();//发生崩溃异常时,重启应用
-                                    Log.i("ceshi:", thread.getName());
+                                    restartApp();
                                 }
                             }).create().show();
                 }
