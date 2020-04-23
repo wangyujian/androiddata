@@ -1,20 +1,17 @@
 package com.example.yujan.android_data.netrequest.okhttppackage1;
 
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
-import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.yujan.android_data.R;
-import com.example.yujan.android_data.netrequest.okhttp.OkHttpUtils;
-import com.example.yujan.android_data.netrequest.okhttp.OkhttpRequestActivity;
-import com.example.yujan.android_data.netrequest.okhttp.OkhttpResponCallBack;
+import com.example.yujan.android_data.netrequest.bean.BannerVo;
+import com.example.yujan.android_data.netrequest.bean.RequestBody;
 import com.example.yujan.android_data.sjms.base.BaseActivity;
+
+import okhttp3.Request;
 
 /**
  * OkHttp的初步封装
@@ -42,7 +39,19 @@ public class OkhttpPackage1Activity extends BaseActivity implements View.OnClick
         switch (v.getId()) {
             //Okhttp之Get请求
             case R.id.btn_get:
+                OkHttpPackageUtils1.getAsyn("https://www.wanandroid.com/banner/json", new ResultCallback<RequestBody<BannerVo>>() {
+                    @Override
+                    public void onError(Request request, Exception e) {
+                        Toast.makeText(OkhttpPackage1Activity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
 
+                    @Override
+                    public void onResponse(RequestBody<BannerVo> response) {
+                        if (response != null && response.getData() != null && response.getData().size() > 0) {
+                            Toast.makeText(OkhttpPackage1Activity.this, response.getData().get(0).getDesc(), Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
                 break;
             case R.id.btn_login:
 
