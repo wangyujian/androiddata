@@ -8,11 +8,13 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
+import com.example.yujan.android_data.exception.ExceptionActivity;
 import com.example.yujan.android_data.jsonparse.JsonParseActivity;
 import com.example.yujan.android_data.netrequest.NetRequestActivity;
 import com.example.yujan.android_data.netrequest.normal.HttpTestActivity;
 import com.example.yujan.android_data.sjms.SJMSActivity;
 import com.example.yujan.android_data.sjms.base.BaseActivity;
+import com.example.yujan.android_data.video.VideoActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -69,6 +71,14 @@ public class MainActivity extends BaseActivity {
                     //Json解析
                     case 2:
                         startActivity(new Intent(MainActivity.this, JsonParseActivity.class));
+                        break;
+                    //异常处理
+                    case 3:
+                        startActivity(new Intent(MainActivity.this, ExceptionActivity.class));
+                        break;
+                    //视频处理
+                    case 4:
+                        startActivity(new Intent(MainActivity.this, VideoActivity.class));
                         break;
                 }
             }

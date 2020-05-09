@@ -34,7 +34,9 @@
             android:name=".netrequest.okhttp.OkhttpRequestActivity"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity android:name=".jsonparse.JsonParseActivity" />
-        <activity android:name=".netrequest.okhttppackage1.OkhttpPackage1Activity"></activity>
+        <activity android:name=".netrequest.okhttppackage1.OkhttpPackage1Activity" />
+        <activity android:name=".exception.ExceptionActivity" />
+        <activity android:name=".video.VideoActivity"></activity>
     </application>
 
 </manifest>

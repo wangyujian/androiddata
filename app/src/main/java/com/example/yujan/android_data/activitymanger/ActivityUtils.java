@@ -6,6 +6,6 @@ import android.app.Activity;
  * Created by yujan on 2020/4/23.
  */
 
-public class ActivityManger {
+public class ActivityUtils {
     public static Activity activity;
 }
