@@ -4,7 +4,7 @@ android {
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.example.yujan.android_data"
-        minSdkVersion 15
+        minSdkVersion 19
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -38,4 +38,6 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.5'
     //FastJson（fastjson会不定期发布针对android版本优化的版本，android优化版本是去掉不必要的代码，减少体积，功能和标准版本基本一样）
     implementation 'com.alibaba:fastjson:1.1.71.android'
+    //支付宝支付
+    implementation name: 'alipaySdk-15.7.6-20200521195109', ext: 'aar'
 }

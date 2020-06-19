@@ -5,7 +5,9 @@
         <item>网络请求</item>
         <item>Json解析</item>
         <item>异常处理</item>
-        <item>视频处理</item>
+        <item>音视频处理</item>
+        <item>WebView</item>
+        <item>支付</item>
     </array>
     <array name="sjms_type">
         <item>无任何架构设计模式</item>
@@ -17,5 +19,11 @@
         <item>普通网络请求</item>
         <item>OkHttp网络请求</item>
         <item>OkHttp网络请求的初步封装</item>
+    </array>
+    <array name="audio_video_type">
+        <item>原生调用</item>
+    </array>
+    <array name="pay_type">
+        <item>支付宝</item>
     </array>
 </resources>

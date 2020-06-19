@@ -12,9 +12,12 @@ import com.example.yujan.android_data.exception.ExceptionActivity;
 import com.example.yujan.android_data.jsonparse.JsonParseActivity;
 import com.example.yujan.android_data.netrequest.NetRequestActivity;
 import com.example.yujan.android_data.netrequest.normal.HttpTestActivity;
+import com.example.yujan.android_data.pay.PayListActivity;
 import com.example.yujan.android_data.sjms.SJMSActivity;
 import com.example.yujan.android_data.sjms.base.BaseActivity;
 import com.example.yujan.android_data.video.VideoActivity;
+import com.example.yujan.android_data.video.VideoMainActivity;
+import com.example.yujan.android_data.webview.WebViewActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -76,9 +79,17 @@ public class MainActivity extends BaseActivity {
                     case 3:
                         startActivity(new Intent(MainActivity.this, ExceptionActivity.class));
                         break;
-                    //视频处理
+                    //音视频处理
                     case 4:
-                        startActivity(new Intent(MainActivity.this, VideoActivity.class));
+                        startActivity(new Intent(MainActivity.this, VideoMainActivity.class));
+                        break;
+                    //WebView
+                    case 5:
+                        startActivity(new Intent(MainActivity.this, WebViewActivity.class));
+                        break;
+                    //支付
+                    case 6:
+                        startActivity(new Intent(MainActivity.this, PayListActivity.class));
                         break;
                 }
             }

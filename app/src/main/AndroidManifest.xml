@@ -36,7 +36,11 @@
         <activity android:name=".jsonparse.JsonParseActivity" />
         <activity android:name=".netrequest.okhttppackage1.OkhttpPackage1Activity" />
         <activity android:name=".exception.ExceptionActivity" />
-        <activity android:name=".video.VideoActivity"></activity>
+        <activity android:name=".video.VideoActivity" />
+        <activity android:name=".video.VideoMainActivity" />
+        <activity android:name=".webview.WebViewActivity" />
+        <activity android:name=".pay.PayListActivity"/>
+        <activity android:name=".pay.alipay.PayDemoActivity"/>
     </application>
 
 </manifest>
