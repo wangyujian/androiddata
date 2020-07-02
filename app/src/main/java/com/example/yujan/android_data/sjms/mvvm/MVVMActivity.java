@@ -2,7 +2,6 @@ package com.example.yujan.android_data.sjms.mvvm;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 
 import com.example.yujan.android_data.R;
 import com.example.yujan.android_data.databinding.ActivityMvvmBinding;

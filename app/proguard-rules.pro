@@ -19,3 +19,7 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+#腾讯移动直播  LiteAVSDK 相关类加入不混淆名单
+-keep class com.tencent.** { *; }
+#--------------------------------------------

@@ -9,6 +9,10 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        //腾讯移动直播用到
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a"
+        }
     }
     buildTypes {
         release {
@@ -19,6 +23,14 @@ android {
     //启用DataBinding
     dataBinding {
         enabled = true
+    }
+    //腾讯移动直播 配置 App 打包参数
+    packagingOptions {
+        pickFirst '**/libc++_shared.so'
+        doNotStrip "*/armeabi/libYTCommon.so"
+        doNotStrip "*/armeabi-v7a/libYTCommon.so"
+        doNotStrip "*/x86/libYTCommon.so"
+        doNotStrip "*/arm64-v8a/libYTCommon.so"
     }
 }
 
@@ -40,4 +52,16 @@ dependencies {
     implementation 'com.alibaba:fastjson:1.1.71.android'
     //支付宝支付
     implementation name: 'alipaySdk-15.7.6-20200521195109', ext: 'aar'
+    //腾讯移动直播
+    implementation 'com.tencent.liteavsdk:LiteAVSDK_Smart:latest.release@aar'
+    //banner 轮播图片
+    implementation 'cn.bingoogolapple:bga-banner:2.2.7'
+    //Glide
+//    annotationProcessor 'com.github.bumptech.glide:compiler:4.5.0'
+//    implementation 'com.github.bumptech.glide:glide:4.11.0'
+//    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+//    compile 'com.github.bumptech.glide:glide:4.9.0'
+//    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+
 }

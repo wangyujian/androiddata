@@ -7,6 +7,16 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     //获得SD卡读的权限
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    //腾讯移动直播相关权限
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-feature android:name="android.hardware.Camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <application
         android:name=".base.AppContext"
@@ -39,8 +49,12 @@
         <activity android:name=".video.VideoActivity" />
         <activity android:name=".video.VideoMainActivity" />
         <activity android:name=".webview.WebViewActivity" />
-        <activity android:name=".pay.PayListActivity"/>
-        <activity android:name=".pay.alipay.PayDemoActivity"/>
+        <activity android:name=".pay.PayListActivity" />
+        <activity android:name=".pay.alipay.PayDemoActivity" />
+        <activity android:name=".banner.BannerActivity" />
+        <activity android:name=".banner.BannerVideoImgActivity" />
+        <activity android:name=".live.LiveListActivity" />
+        <activity android:name=".live.TencentLiveActivity"/>
     </application>
 
 </manifest>

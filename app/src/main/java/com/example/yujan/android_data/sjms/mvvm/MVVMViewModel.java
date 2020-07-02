@@ -6,7 +6,6 @@ import android.databinding.Bindable;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Toast;
-
 import com.example.yujan.android_data.BR;
 import com.example.yujan.android_data.databinding.ActivityMvvmBinding;
 import com.example.yujan.android_data.sjms.bean.UserInfoBean;
@@ -61,6 +60,7 @@ public class MVVMViewModel extends BaseObservable {
         this.result = result;
         notifyPropertyChanged(BR.result);
     }
+
 
     @Bindable
     public String getUserInput() {

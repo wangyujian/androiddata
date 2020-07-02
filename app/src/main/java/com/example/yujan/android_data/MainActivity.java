@@ -8,8 +8,10 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
+import com.example.yujan.android_data.banner.BannerActivity;
 import com.example.yujan.android_data.exception.ExceptionActivity;
 import com.example.yujan.android_data.jsonparse.JsonParseActivity;
+import com.example.yujan.android_data.live.LiveListActivity;
 import com.example.yujan.android_data.netrequest.NetRequestActivity;
 import com.example.yujan.android_data.netrequest.normal.HttpTestActivity;
 import com.example.yujan.android_data.pay.PayListActivity;
@@ -90,6 +92,14 @@ public class MainActivity extends BaseActivity {
                     //支付
                     case 6:
                         startActivity(new Intent(MainActivity.this, PayListActivity.class));
+                        break;
+                    //轮播图
+                    case 7:
+                        startActivity(new Intent(MainActivity.this, BannerActivity.class));
+                        break;
+                    //直播
+                    case 8:
+                        startActivity(new Intent(MainActivity.this, LiveListActivity.class));
                         break;
                 }
             }

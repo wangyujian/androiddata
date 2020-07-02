@@ -9,6 +9,7 @@ import android.os.Looper;
 
 import com.example.yujan.android_data.MainActivity;
 import com.example.yujan.android_data.activitymanger.ActivityUtils;
+import com.tencent.rtmp.TXLiveBase;
 
 /**
  * Created by yujan on 2020/4/26.
@@ -63,5 +64,12 @@ public class ApplicationManger implements ApplicationIml {
         context.startActivity(intent);
         //结束进程之前可以把你程序的注销或者退出代码放在这段代码之前
         android.os.Process.killProcess(android.os.Process.myPid());
+    }
+
+    @Override
+    public void initTencentLive() {
+        String licenceURL = ""; // 获取到的 licence url
+        String licenceKey = ""; // 获取到的 licence key
+        TXLiveBase.getInstance().setLicence(context, licenceURL, licenceKey);
     }
 }

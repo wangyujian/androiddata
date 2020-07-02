@@ -13,8 +13,12 @@ public class AppContext extends Application {
 
     public void onCreate() {
         super.onCreate();
-//        ApplicationManger.getInstance(this).initException();
-        CrashHandler.getInstance().init(this);
+        initMethod();
     }
 
+    private void initMethod() {
+//        ApplicationManger.getInstance(this).initException();
+        CrashHandler.getInstance().init(this);
+        ApplicationManger.getInstance(this).initTencentLive();
+    }
 }

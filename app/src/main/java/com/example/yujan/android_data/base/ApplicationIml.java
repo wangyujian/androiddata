@@ -5,5 +5,13 @@ package com.example.yujan.android_data.base;
  */
 
 public interface ApplicationIml {
+    /**
+     * 异常捕获
+     */
     void initException();
+
+    /**
+     * 配置 License 授权(腾讯移动直播)
+     */
+    void initTencentLive();
 }
