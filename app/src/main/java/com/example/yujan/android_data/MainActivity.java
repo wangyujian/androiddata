@@ -12,6 +12,7 @@ import com.example.yujan.android_data.banner.BannerActivity;
 import com.example.yujan.android_data.exception.ExceptionActivity;
 import com.example.yujan.android_data.jsonparse.JsonParseActivity;
 import com.example.yujan.android_data.live.LiveListActivity;
+import com.example.yujan.android_data.miniProgram.MiNiProgramTypeActivity;
 import com.example.yujan.android_data.netrequest.NetRequestActivity;
 import com.example.yujan.android_data.netrequest.normal.HttpTestActivity;
 import com.example.yujan.android_data.pay.PayListActivity;
@@ -100,6 +101,10 @@ public class MainActivity extends BaseActivity {
                     //直播
                     case 8:
                         startActivity(new Intent(MainActivity.this, LiveListActivity.class));
+                        break;
+                    //微信小程序
+                    case 9:
+                        startActivity(new Intent(MainActivity.this, MiNiProgramTypeActivity.class));
                         break;
                 }
             }
