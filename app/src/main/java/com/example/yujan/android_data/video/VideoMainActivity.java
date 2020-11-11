@@ -63,6 +63,18 @@ public class VideoMainActivity extends BaseActivity {
                     case 0:
                         startActivity(new Intent(VideoMainActivity.this, VideoActivity.class));
                         break;
+                    //详情视频播放（全屏）
+                    case 1:
+                        startActivity(new Intent(VideoMainActivity.this, VideoDetailsActivity.class));
+                        break;
+                    //列表视频播放（小屏）
+                    case 2:
+                        startActivity(new Intent(VideoMainActivity.this, VideoListActivity.class));
+                        break;
+                    //详情视频播放（全屏）
+                    case 3:
+                        startActivity(new Intent(VideoMainActivity.this, VideoDetailsDKActivity.class));
+                        break;
                 }
             }
         });

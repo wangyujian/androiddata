@@ -25,6 +25,9 @@
     </array>
     <array name="audio_video_type">
         <item>原生调用</item>
+        <item>详情视频播放（全屏）</item>
+        <item>列表视频播放（小屏）</item>
+        <item>列表视频播放（小屏）(DK)</item>
     </array>
     <array name="pay_type">
         <item>支付宝</item>

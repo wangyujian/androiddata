@@ -35,6 +35,7 @@ android {
 }
 
 dependencies {
+    implementation 'com.android.support:support-v4:26.1.0'
     androidTestCompile('com.android.support:support-annotations:26.1.0') {
         force = true
     }
@@ -65,4 +66,12 @@ dependencies {
     compile 'com.github.bumptech.glide:glide:3.7.0'
     //微信开发
     compile 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+    //视频播放器
+    implementation 'com.shuyu:gsyVideoPlayer-java:6.0.2'
+    implementation 'com.shuyu:gsyVideoPlayer-armv7a:6.0.2'
+    implementation 'com.shuyu:gsyVideoPlayer-arm64:6.0.2'
+    //视频播放器
+    implementation 'com.github.dueeeke.dkplayer:dkplayer-java:3.2.6'
+    //可选，包含StandardVideoController的实现
+    implementation 'com.github.dueeeke.dkplayer:dkplayer-ui:3.2.6'
 }

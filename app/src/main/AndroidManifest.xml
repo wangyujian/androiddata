@@ -57,7 +57,16 @@
         <activity android:name=".live.LiveListActivity" />
         <activity android:name=".live.TencentLiveActivity" />
         <activity android:name=".miniProgram.MiNiProgramTypeActivity" />
-        <activity android:name=".miniProgram.MiNiProgramTZActivity"></activity>
+        <activity android:name=".miniProgram.MiNiProgramTZActivity" />
+        <activity
+            android:name=".video.VideoDetailsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".video.VideoListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity android:name=".video.VideoDetailsDKActivity"></activity>
     </application>
 
 </manifest>

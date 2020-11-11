@@ -25,4 +25,8 @@
     <string name="error_missing_global_partner_seller_rsa_private">Error: Missing \"PARTNER\", \"SELLER\", or \"RSA_PRIVATE\\ in OrderUtils1_0_Global.</string>
     <string name="payment_inst_hk">Payer: HK</string>
     <string name="payment_inst_cn">Payer: CN</string>
+
+    <string name="title_activity_video_details_dk">VideoDetailsDKActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

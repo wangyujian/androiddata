@@ -31,7 +31,7 @@ public class MiNiProgramTZActivity extends BaseActivity implements View.OnClickL
      * 跳转到指定微信小程序
      */
     private void toWxMiniProgram() {
-        String appId = "wx5bb986a31871fb9f"; // 应用AppId
+        String appId = "wx92f50390ab4ba921"; // 应用AppId
         IWXAPI api = WXAPIFactory.createWXAPI(MiNiProgramTZActivity.this, appId);
         WXLaunchMiniProgram.Req req = new WXLaunchMiniProgram.Req();
         req.userName = "gh_2bf0edbe7bb6"; // 填小程序原始id
