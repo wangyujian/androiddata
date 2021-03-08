@@ -4,32 +4,26 @@
     android:layout_height="match_parent"
     android:background="@android:color/black">
 
-    <FrameLayout
+    <RelativeLayout
         android:id="@+id/surface_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center">
+        android:layout_height="match_parent">
 
-    </FrameLayout>
+    </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/thumb"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:background="#000000"
-        android:scaleType="fitCenter">
+        android:background="#000000">
 
         <ImageView
             android:id="@+id/thumbImage"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scaleType="centerCrop" />
+            android:layout_centerInParent="true" />
 
     </RelativeLayout>
 
@@ -38,29 +32,31 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="#99000000"
-        android:gravity="center_vertical"
         android:orientation="vertical"
-        android:visibility="visible">
+        android:visibility="invisible">
 
         <ImageView
+            android:id="@+id/video_silence"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:layout_margin="15dp"
-            android:src="@mipmap/iv_course_video_sound" />
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp">
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/current"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
+                android:layout_marginLeft="15dp"
                 android:text="00:00"
-                android:textColor="#ffffff" />
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
 
             <SeekBar
                 android:id="@+id/progress"
@@ -70,29 +66,29 @@
                 android:layout_weight="1.0"
                 android:background="@null"
                 android:max="100"
-                android:maxHeight="4dp"
-                android:minHeight="4dp"
+                android:maxHeight="1dp"
+                android:minHeight="1dp"
                 android:paddingBottom="8dp"
                 android:paddingTop="8dp"
-                android:progressDrawable="@drawable/video_seek_progress"
-                android:thumb="@drawable/video_seek_thumb" />
+                android:progressDrawable="@drawable/video_seek_progress"/>
 
             <TextView
                 android:id="@+id/total"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="16dp"
+                android:layout_marginRight="15dp"
                 android:text="00:00"
-                android:textColor="#ffffff" />
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
 
             <ImageView
                 android:id="@+id/fullscreen"
                 android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:paddingRight="16dp"
-                android:scaleType="center"
+                android:layout_height="match_parent"
+                android:paddingRight="30dp"
                 android:src="@drawable/video_enlarge" />
         </LinearLayout>
+
     </LinearLayout>
 
     <ProgressBar
@@ -125,7 +121,8 @@
             android:layout_height="48dp"
             android:paddingLeft="10dp"
             android:scaleType="centerInside"
-            android:src="@drawable/video_back" />
+            android:src="@drawable/video_back"
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/title"
@@ -136,22 +133,12 @@
             android:textSize="18sp" />
     </LinearLayout>
 
-    <moe.codeest.enviews.ENDownloadView
-        android:id="@+id/loading"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:visibility="invisible" />
-
     <ImageView
         android:id="@+id/start"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_centerInParent="true"
         android:layout_gravity="center_vertical" />
-
 
     <ImageView
         android:id="@+id/small_close"

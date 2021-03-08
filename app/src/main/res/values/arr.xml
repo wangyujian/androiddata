@@ -11,6 +11,8 @@
         <item>轮播图</item>
         <item>直播</item>
         <item>微信小程序</item>
+        <item>表格</item>
+        <item>tab</item>
     </array>
     <array name="sjms_type">
         <item>无任何架构设计模式</item>
@@ -40,5 +42,8 @@
     </array>
     <array name="wx_mini_program">
         <item>android 跳转 到微信小程序</item>
+    </array>
+    <array name="tab_type">
+        <item>悬浮瞄点定位tab</item>
     </array>
 </resources>

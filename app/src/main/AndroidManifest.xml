@@ -66,7 +66,10 @@
             android:name=".video.VideoListActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
             android:screenOrientation="portrait" />
-        <activity android:name=".video.VideoDetailsDKActivity"></activity>
+        <activity android:name=".video.VideoDetailsDKActivity" />
+        <activity android:name=".chart.ChartActivity" />
+        <activity android:name=".tab.TabListActivity" />
+        <activity android:name=".tab.TabType01Activity"></activity>
     </application>
 
 </manifest>
