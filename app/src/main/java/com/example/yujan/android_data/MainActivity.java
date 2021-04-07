@@ -2,7 +2,6 @@ package com.example.yujan.android_data;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -15,13 +14,12 @@ import com.example.yujan.android_data.jsonparse.JsonParseActivity;
 import com.example.yujan.android_data.live.LiveListActivity;
 import com.example.yujan.android_data.miniProgram.MiNiProgramTypeActivity;
 import com.example.yujan.android_data.netrequest.NetRequestActivity;
-import com.example.yujan.android_data.netrequest.normal.HttpTestActivity;
 import com.example.yujan.android_data.pay.PayListActivity;
 import com.example.yujan.android_data.sjms.SJMSActivity;
 import com.example.yujan.android_data.sjms.base.BaseActivity;
 import com.example.yujan.android_data.tab.TabListActivity;
-import com.example.yujan.android_data.video.VideoActivity;
 import com.example.yujan.android_data.video.VideoMainActivity;
+import com.example.yujan.android_data.watermark.WaterMarkActivity;
 import com.example.yujan.android_data.webview.WebViewActivity;
 
 import java.util.ArrayList;
@@ -115,6 +113,13 @@ public class MainActivity extends BaseActivity {
                     //表格
                     case 11:
                         startActivity(new Intent(MainActivity.this, TabListActivity.class));
+                        break;
+                    //kotlin
+                    case 12:
+                        break;
+                    //水印
+                    case 13:
+                        startActivity(new Intent(MainActivity.this, WaterMarkActivity.class));
                         break;
                 }
             }

@@ -13,6 +13,8 @@
         <item>微信小程序</item>
         <item>表格</item>
         <item>tab</item>
+        <item>kotlin</item>
+        <item>水印</item>
     </array>
     <array name="sjms_type">
         <item>无任何架构设计模式</item>

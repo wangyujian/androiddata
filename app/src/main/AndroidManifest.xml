@@ -69,7 +69,8 @@
         <activity android:name=".video.VideoDetailsDKActivity" />
         <activity android:name=".chart.ChartActivity" />
         <activity android:name=".tab.TabListActivity" />
-        <activity android:name=".tab.TabType01Activity"></activity>
+        <activity android:name=".tab.TabType01Activity" />
+        <activity android:name=".watermark.WaterMarkActivity"/>
     </application>
 
 </manifest>
