@@ -1,4 +1,4 @@
-package com.example.yujan.android_data.netrequest;
+package com.example.yujan.android_data.method;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,26 +8,21 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
 import com.example.yujan.android_data.R;
-import com.example.yujan.android_data.netrequest.normal.HttpTestActivity;
-import com.example.yujan.android_data.netrequest.okhttp.OkhttpRequestActivity;
-import com.example.yujan.android_data.netrequest.okhttppackage1.OkhttpPackage1Activity;
-import com.example.yujan.android_data.sjms.NormalActivity;
 import com.example.yujan.android_data.sjms.base.BaseActivity;
-import com.example.yujan.android_data.sjms.mvc.MVCActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class NetRequestActivity extends BaseActivity {
-    private ListView lv_net_request;
+public class MethodToolActivity extends BaseActivity {
+    private ListView lv_type;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_net_request);
-        lv_net_request = findViewById(R.id.lv_net_request);
+        setContentView(R.layout.activity_method_tool);
+        lv_type = findViewById(R.id.lv_type);
         initLisener();
         setData();
     }
@@ -37,13 +32,13 @@ public class NetRequestActivity extends BaseActivity {
      */
     private void setData() {
         List<Map<String, Object>> list = new ArrayList<>();
-        String[] types = getResources().getStringArray(R.array.net_request_type);
+        String[] types = getResources().getStringArray(R.array.method_type);
         for (int i = 0; i < types.length; i++) {
             Map<String, Object> map = new HashMap<>();
             map.put("type", types[i]);
             list.add(map);
         }
-        lv_net_request.setAdapter(new SimpleAdapter(this,
+        lv_type.setAdapter(new SimpleAdapter(this,
                 list,
                 R.layout.layout_main_lv_item,
                 new String[]{"type"},
@@ -54,21 +49,21 @@ public class NetRequestActivity extends BaseActivity {
      * lv监听
      */
     private void initLisener() {
-        lv_net_request.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        lv_type.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
-                    //普通的网络请求
+                    //金额相关
                     case 0:
-                        startActivity(new Intent(NetRequestActivity.this, HttpTestActivity.class));
+                        startActivity(new Intent(MethodToolActivity.this, MoneyActivity.class));
                         break;
-                    //okhttp网络请求
+                    //日期相关
                     case 1:
-                        startActivity(new Intent(NetRequestActivity.this, OkhttpRequestActivity.class));
+                        startActivity(new Intent(MethodToolActivity.this, DateActivity.class));
                         break;
-                    //okhttp网络请求初步封装
-                    case 2:
-                        startActivity(new Intent(NetRequestActivity.this, OkhttpPackage1Activity.class));
+                    //日期相关
+                    case 3:
+                        startActivity(new Intent(MethodToolActivity.this, ValidateActivity.class));
                         break;
                 }
             }

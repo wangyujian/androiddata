@@ -1,6 +1,6 @@
 package com.example.yujan.android_data.sjms.mvvm;
 
-import android.databinding.DataBindingUtil;
+import androidx.databinding.DataBindingUtil;
 import android.os.Bundle;
 
 import com.example.yujan.android_data.R;

@@ -36,7 +36,6 @@
         android:visibility="invisible">
 
         <ImageView
-            android:id="@+id/video_silence"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"

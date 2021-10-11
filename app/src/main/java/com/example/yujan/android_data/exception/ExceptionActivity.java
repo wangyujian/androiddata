@@ -1,6 +1,5 @@
 package com.example.yujan.android_data.exception;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,6 +10,8 @@ import com.example.yujan.android_data.R;
 import org.w3c.dom.Text;
 
 import java.io.Serializable;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class ExceptionActivity extends AppCompatActivity implements View.OnClickListener {
     private TextView tv_exception_api_result;

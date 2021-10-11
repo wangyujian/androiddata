@@ -1,11 +1,13 @@
 package com.example.yujan.android_data.video;
 
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
 
 import com.dueeeke.videocontroller.StandardVideoController;
 import com.dueeeke.videoplayer.player.VideoView;
 import com.example.yujan.android_data.R;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class VideoDetailsDKActivity extends AppCompatActivity {
     VideoView videoView;

@@ -1,7 +1,6 @@
 package com.example.yujan.android_data.sjms.mvc;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
@@ -11,6 +10,8 @@ import android.widget.Toast;
 import com.example.yujan.android_data.R;
 import com.example.yujan.android_data.sjms.bean.UserInfoBean;
 import com.example.yujan.android_data.sjms.callback.LoginCallBack;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * 作用：

@@ -2,7 +2,6 @@ package com.example.yujan.android_data.banner;
 
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
@@ -17,6 +16,7 @@ import com.example.yujan.android_data.sjms.base.BaseActivity;
 
 import java.util.ArrayList;
 
+import androidx.annotation.Nullable;
 import cn.bingoogolapple.bgabanner.BGABanner;
 
 public class BannerVideoImgActivity extends BaseActivity {

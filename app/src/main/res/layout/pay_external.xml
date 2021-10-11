@@ -9,7 +9,6 @@
         android:orientation="vertical">
    
         <Button
-            android:id="@+id/payV2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -18,7 +17,6 @@
             android:text="@string/pay_with_alipay" />
 
         <Button
-            android:id="@+id/authV2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -27,7 +25,6 @@
             android:text="@string/auth_with_alipay" />
         
         <Button
-            android:id="@+id/h5pay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"

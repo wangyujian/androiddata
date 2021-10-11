@@ -1,14 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 30
     defaultConfig {
         applicationId "com.example.yujan.android_data"
         minSdkVersion 19
-        targetSdkVersion 26
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        multiDexEnabled true
         //腾讯移动直播用到
         ndk {
             abiFilters "armeabi", "armeabi-v7a", "arm64-v8a"
@@ -19,6 +20,10 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
     //启用DataBinding
     dataBinding {
@@ -32,19 +37,21 @@ android {
         doNotStrip "*/x86/libYTCommon.so"
         doNotStrip "*/arm64-v8a/libYTCommon.so"
     }
+    buildToolsVersion '30.0.3'
 }
 
 dependencies {
-    implementation 'com.android.support:support-v4:26.1.0'
-    androidTestCompile('com.android.support:support-annotations:26.1.0') {
+    implementation 'com.google.android.material:material:1.2.1'
+    androidTestCompile('androidx.annotation:annotation:1.0.0') {
         force = true
     }
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:26.1.0'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
     //okHttp
     implementation("com.squareup.okhttp3:okhttp:4.5.0")
     //Gson
@@ -76,4 +83,7 @@ dependencies {
     implementation 'com.github.dueeeke.dkplayer:dkplayer-ui:3.2.6'
     //表格
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+//    implementation project(':flutter')
+    //分包工具
+    implementation 'androidx.multidex:multidex:2.0.0'
 }

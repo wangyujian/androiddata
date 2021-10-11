@@ -1,7 +1,7 @@
 package com.example.yujan.android_data.video;
 
 import android.graphics.Point;
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.widget.AbsListView;
 import android.widget.ListView;
@@ -14,6 +14,8 @@ import com.shuyu.gsyvideoplayer.GSYVideoManager;
 import com.shuyu.gsyvideoplayer.listener.GSYSampleCallBack;
 import com.shuyu.gsyvideoplayer.utils.CommonUtil;
 import com.shuyu.gsyvideoplayer.utils.GSYVideoHelper;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class VideoListActivity extends AppCompatActivity {
 

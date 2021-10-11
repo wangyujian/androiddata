@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.GridView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
@@ -12,6 +13,7 @@ import com.example.yujan.android_data.chart.ChartActivity;
 import com.example.yujan.android_data.exception.ExceptionActivity;
 import com.example.yujan.android_data.jsonparse.JsonParseActivity;
 import com.example.yujan.android_data.live.LiveListActivity;
+import com.example.yujan.android_data.method.MethodToolActivity;
 import com.example.yujan.android_data.miniProgram.MiNiProgramTypeActivity;
 import com.example.yujan.android_data.netrequest.NetRequestActivity;
 import com.example.yujan.android_data.pay.PayListActivity;
@@ -29,7 +31,7 @@ import java.util.Map;
 
 public class MainActivity extends BaseActivity {
 
-    private ListView lv_type;
+    private GridView lv_type;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -120,6 +122,10 @@ public class MainActivity extends BaseActivity {
                     //水印
                     case 13:
                         startActivity(new Intent(MainActivity.this, WaterMarkActivity.class));
+                        break;
+                    //方法工具类
+                    case 14:
+                        startActivity(new Intent(MainActivity.this, MethodToolActivity.class));
                         break;
                 }
             }

@@ -15,6 +15,7 @@
         <item>tab</item>
         <item>kotlin</item>
         <item>水印</item>
+        <item>方法工具类</item>
     </array>
     <array name="sjms_type">
         <item>无任何架构设计模式</item>
@@ -47,5 +48,11 @@
     </array>
     <array name="tab_type">
         <item>悬浮瞄点定位tab</item>
+    </array>
+    <array name="method_type">
+        <item>金额相关</item>
+        <item>日期相关</item>
+        <item>省份相关</item>
+        <item>身份相关</item>
     </array>
 </resources>

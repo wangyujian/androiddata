@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1）效验手机号" />
+
+        <EditText
+            android:id="@+id/edt_tel"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:hint="请输入"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_check_tel"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="效验手机号" />
+
+        <TextView
+            android:id="@+id/tv_result_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2）效验邮箱" />
+
+        <EditText
+            android:id="@+id/edt_mail"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:hint="请输入"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_check_mail"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="效验邮箱" />
+
+        <TextView
+            android:id="@+id/tv_result_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2）效验身份证号" />
+
+        <EditText
+            android:id="@+id/edt_idCard"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:hint="请输入"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_check_idCard"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="效验身份证号" />
+
+        <TextView
+            android:id="@+id/tv_result_idCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

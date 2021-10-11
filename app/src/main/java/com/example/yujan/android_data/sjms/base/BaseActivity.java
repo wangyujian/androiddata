@@ -1,10 +1,12 @@
 package com.example.yujan.android_data.sjms.base;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 
 import com.example.yujan.android_data.activitymanger.ActivityUtils;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
 
 /**
  * Created by yujan on 2020/4/10.

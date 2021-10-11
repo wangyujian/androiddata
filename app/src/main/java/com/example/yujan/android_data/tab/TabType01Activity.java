@@ -1,9 +1,11 @@
 package com.example.yujan.android_data.tab;
 
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
 
 import com.example.yujan.android_data.R;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class TabType01Activity extends AppCompatActivity {
 

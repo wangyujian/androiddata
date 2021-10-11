@@ -1,8 +1,8 @@
 package com.example.yujan.android_data.sjms.mvvm;
 
 import android.app.Application;
-import android.databinding.BaseObservable;
-import android.databinding.Bindable;
+import androidx.databinding.BaseObservable;
+import androidx.databinding.Bindable;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Toast;

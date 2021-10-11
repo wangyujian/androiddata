@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -21,6 +20,8 @@ import com.example.yujan.android_data.R;
 import com.example.yujan.android_data.pay.alipay.util.OrderInfoUtil2_0;
 
 import java.util.Map;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * 重要说明：

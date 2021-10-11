@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".method.MoneyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1）输入金额最小为0.01且只能为两位小数" />
+
+        <com.example.yujan.android_data.widget.edit.CustomDoubleEditView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:hint="请输入金额"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2）比较两个金额的大小" />
+
+        <EditText
+            android:id="@+id/edt_01"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:hint="请输入金额"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/edt_02"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:hint="请输入金额"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_check"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="计算" />
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

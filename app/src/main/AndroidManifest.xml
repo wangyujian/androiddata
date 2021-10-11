@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.yujan.android_data">
-    //网络请求
+
     <uses-permission android:name="android.permission.INTERNET" />
-    //获得SD卡写的权限
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    //获得SD卡读的权限
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    //腾讯移动直播相关权限
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
@@ -27,6 +25,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".method.ValidateActivity"></activity>
+        <activity android:name=".method.DateActivity" />
+        <activity android:name=".method.MoneyActivity" />
+        <activity android:name=".method.MethodToolActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -70,7 +72,7 @@
         <activity android:name=".chart.ChartActivity" />
         <activity android:name=".tab.TabListActivity" />
         <activity android:name=".tab.TabType01Activity" />
-        <activity android:name=".watermark.WaterMarkActivity"/>
+        <activity android:name=".watermark.WaterMarkActivity" />
     </application>
 
 </manifest>
