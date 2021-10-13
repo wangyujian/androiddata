@@ -11,9 +11,9 @@ import com.example.yujan.android_data.sjms.base.BaseActivity;
 import com.example.yujan.android_data.utils.ValidateUtil;
 
 public class ValidateActivity extends BaseActivity implements View.OnClickListener {
-    EditText edt_tel, edt_mail,edt_idCard;
-    Button btn_check_tel, btn_check_mail,btn_check_idCard;
-    TextView tv_result_tel, tv_result_mail,tv_result_idCard;
+    EditText edt_tel, edt_mail, edt_idCard;
+    Button btn_check_tel, btn_check_mail, btn_check_idCard;
+    TextView tv_result_tel, tv_result_mail, tv_result_idCard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
