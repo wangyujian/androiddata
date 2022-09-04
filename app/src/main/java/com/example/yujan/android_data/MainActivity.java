@@ -5,13 +5,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
-import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
+import com.example.yujan.android_data.activity_view.ViewActivity;
 import com.example.yujan.android_data.banner.BannerActivity;
 import com.example.yujan.android_data.chart.ChartActivity;
 import com.example.yujan.android_data.exception.ExceptionActivity;
 import com.example.yujan.android_data.jsonparse.JsonParseActivity;
+import com.example.yujan.android_data.layout_view.LayoutActivity;
 import com.example.yujan.android_data.live.LiveListActivity;
 import com.example.yujan.android_data.method.MethodToolActivity;
 import com.example.yujan.android_data.miniProgram.MiNiProgramTypeActivity;
@@ -28,6 +29,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import androidx.viewpager.widget.ViewPager;
 
 public class MainActivity extends BaseActivity {
 
@@ -127,8 +130,17 @@ public class MainActivity extends BaseActivity {
                     case 14:
                         startActivity(new Intent(MainActivity.this, MethodToolActivity.class));
                         break;
+                    //布局
+                    case 15:
+                        startActivity(new Intent(MainActivity.this, LayoutActivity.class));
+                        break;
+                    //view
+                    case 16:
+                        startActivity(new Intent(MainActivity.this, ViewActivity.class));
+                        break;
                 }
             }
         });
     }
+
 }

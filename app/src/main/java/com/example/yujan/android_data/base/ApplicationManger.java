@@ -4,12 +4,21 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Handler;
 import android.os.Looper;
 
 import com.example.yujan.android_data.MainActivity;
 import com.example.yujan.android_data.activitymanger.ActivityUtils;
+import com.example.yujan.android_data.exception.CrashHandler;
+import com.qiyukf.nimlib.sdk.StatusBarNotificationConfig;
+import com.qiyukf.unicorn.api.ImageLoaderListener;
+import com.qiyukf.unicorn.api.Unicorn;
+import com.qiyukf.unicorn.api.UnicornImageLoader;
+import com.qiyukf.unicorn.api.YSFOptions;
 import com.tencent.rtmp.TXLiveBase;
+
+import androidx.annotation.Nullable;
 
 /**
  * Created by yujan on 2020/4/26.
@@ -33,6 +42,12 @@ public class ApplicationManger implements ApplicationIml {
             }
         }
         return applicationManger;
+    }
+
+    public void initMethod() {
+        CrashHandler.getInstance().init(context);
+        initTencentLive();
+        initQiYuKF();
     }
 
     @Override
@@ -71,5 +86,29 @@ public class ApplicationManger implements ApplicationIml {
         String licenceURL = ""; // 获取到的 licence url
         String licenceKey = ""; // 获取到的 licence key
         TXLiveBase.getInstance().setLicence(context, licenceURL, licenceKey);
+    }
+
+    @Override
+    public void initQiYuKF() {
+        // appKey 可以在七鱼管理系统->设置->App 接入 页面找到
+        Unicorn.init(context, "3bc23e5ff3b354d482388601c7f30b1e", options(), new UnicornImageLoader() {
+            @Nullable
+            @Override
+            public Bitmap loadImageSync(String s, int i, int i1) {
+                return null;
+            }
+
+            @Override
+            public void loadImage(String s, int i, int i1, ImageLoaderListener imageLoaderListener) {
+
+            }
+        });
+    }
+
+    // 如果返回值为null，则全部使用默认参数。
+    private YSFOptions options() {
+        YSFOptions options = new YSFOptions();
+        options.statusBarNotificationConfig = new StatusBarNotificationConfig();
+        return options;
     }
 }

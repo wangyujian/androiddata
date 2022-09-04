@@ -4,7 +4,7 @@ android {
     compileSdkVersion 30
     defaultConfig {
         applicationId "com.example.yujan.android_data"
-        minSdkVersion 19
+        minSdkVersion 23
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -86,4 +86,6 @@ dependencies {
 //    implementation project(':flutter')
     //分包工具
     implementation 'androidx.multidex:multidex:2.0.0'
+    //网易七鱼
+    implementation 'com.qiyukf.unicorn:unicorn:+'
 }

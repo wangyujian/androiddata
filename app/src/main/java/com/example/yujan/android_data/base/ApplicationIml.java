@@ -14,4 +14,9 @@ public interface ApplicationIml {
      * 配置 License 授权(腾讯移动直播)
      */
     void initTencentLive();
+
+    /**
+     * 网易七鱼
+     */
+    void initQiYuKF();
 }

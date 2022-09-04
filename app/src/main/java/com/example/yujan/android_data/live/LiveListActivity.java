@@ -57,6 +57,10 @@ public class LiveListActivity extends BaseActivity {
                     case 0:
                         startActivity(new Intent(LiveListActivity.this, TencentLiveActivity.class));
                         break;
+                    //七鱼客服
+                    case 1:
+                        startActivity(new Intent(LiveListActivity.this, QiYuKFActivity.class));
+                        break;
                 }
             }
         });

@@ -17,5 +17,6 @@
     <string name="alipay_sdk_version_is">"Alipay SDK version: "</string>
     <string name="error_missing_h5_pay_url">Missing URL to load. Please configure in PayDemoActivity.h5Pay()</string>
     <string name="error">Error</string>
+    <string name="tip">你好，世界！</string>
 
 </resources>
