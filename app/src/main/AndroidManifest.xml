@@ -24,9 +24,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".activity_view.SJFFActivity"
-            android:exported="false" />
         <activity android:name=".memory_file.Memory_FileActivity" />
         <activity android:name=".live.QiYuKFActivity" />
         <activity android:name=".layout_view.LayoutActivity" />
