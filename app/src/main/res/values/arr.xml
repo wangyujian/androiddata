@@ -18,6 +18,7 @@
         <item>方法工具类</item>
         <item>布局</item>
         <item>view</item>
+        <item>缓存</item>
     </array>
     <array name="sjms_type">
         <item>无任何架构设计模式</item>
@@ -66,4 +67,8 @@
         <item>view的绘制</item>
         <item>自定义view</item>
     </array>
+    <array name="cache">
+        <item>RecyclerView的缓存</item>
+    </array>
+
 </resources>

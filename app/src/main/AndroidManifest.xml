@@ -24,6 +24,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".CacheListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HandlerActivity"
+            android:exported="false" />
         <activity android:name=".memory_file.Memory_FileActivity" />
         <activity android:name=".live.QiYuKFActivity" />
         <activity android:name=".layout_view.LayoutActivity" />
@@ -76,8 +85,10 @@
         <activity android:name=".tab.TabListActivity" />
         <activity android:name=".tab.TabType01Activity" />
         <activity android:name=".watermark.WaterMarkActivity" />
-        <activity android:name=".activity_view.ViewActivity"/>
-        <activity android:name=".activity_view.SJFFActivity"/>
+        <activity android:name=".activity_view.ViewActivity" />
+        <activity android:name=".activity_view.SJFFActivity" />
+        <activity android:name=".cache.CacheListActivity" />
+        <activity android:name=".cache.recycler_view.RecyclerViewActivity" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

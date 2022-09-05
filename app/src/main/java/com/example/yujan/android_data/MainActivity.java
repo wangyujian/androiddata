@@ -9,6 +9,7 @@ import android.widget.SimpleAdapter;
 
 import com.example.yujan.android_data.activity_view.ViewActivity;
 import com.example.yujan.android_data.banner.BannerActivity;
+import com.example.yujan.android_data.cache.CacheListActivity;
 import com.example.yujan.android_data.chart.ChartActivity;
 import com.example.yujan.android_data.exception.ExceptionActivity;
 import com.example.yujan.android_data.jsonparse.JsonParseActivity;
@@ -137,6 +138,10 @@ public class MainActivity extends BaseActivity {
                     //view
                     case 16:
                         startActivity(new Intent(MainActivity.this, ViewActivity.class));
+                        break;
+                    //cache
+                    case 17:
+                        startActivity(new Intent(MainActivity.this, CacheListActivity.class));
                         break;
                 }
             }
