@@ -53,7 +53,8 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
     //okHttp
-    implementation("com.squareup.okhttp3:okhttp:4.5.0")
+//    implementation("com.squareup.okhttp3:okhttp:4.5.0")
+    implementation 'com.squareup.okhttp3:okhttp:3.14.9'
     //Gson
     implementation 'com.google.code.gson:gson:2.8.5'
     //FastJson（fastjson会不定期发布针对android版本优化的版本，android优化版本是去掉不必要的代码，减少体积，功能和标准版本基本一样）
@@ -70,7 +71,9 @@ dependencies {
 //    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
 //    compile 'com.github.bumptech.glide:glide:4.9.0'
 //    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
-    compile 'com.github.bumptech.glide:glide:3.7.0'
+//    compile 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.github.bumptech.glide:glide:4.13.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.2'
     //微信开发
     compile 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
     //视频播放器

@@ -7,11 +7,11 @@ import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.SimpleAdapter;
 
-import com.example.yujan.android_data.activity_view.ViewActivity;
 import com.example.yujan.android_data.banner.BannerActivity;
 import com.example.yujan.android_data.cache.CacheListActivity;
 import com.example.yujan.android_data.chart.ChartActivity;
 import com.example.yujan.android_data.exception.ExceptionActivity;
+import com.example.yujan.android_data.jetpack.JetPackActivity;
 import com.example.yujan.android_data.jsonparse.JsonParseActivity;
 import com.example.yujan.android_data.layout_view.LayoutActivity;
 import com.example.yujan.android_data.live.LiveListActivity;
@@ -19,6 +19,7 @@ import com.example.yujan.android_data.method.MethodToolActivity;
 import com.example.yujan.android_data.miniProgram.MiNiProgramTypeActivity;
 import com.example.yujan.android_data.netrequest.NetRequestActivity;
 import com.example.yujan.android_data.pay.PayListActivity;
+import com.example.yujan.android_data.sjff.ViewActivity;
 import com.example.yujan.android_data.sjms.SJMSActivity;
 import com.example.yujan.android_data.sjms.base.BaseActivity;
 import com.example.yujan.android_data.tab.TabListActivity;
@@ -30,8 +31,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import androidx.viewpager.widget.ViewPager;
 
 public class MainActivity extends BaseActivity {
 
@@ -142,6 +141,10 @@ public class MainActivity extends BaseActivity {
                     //cache
                     case 17:
                         startActivity(new Intent(MainActivity.this, CacheListActivity.class));
+                        break;
+                    //JetPack
+                    case 18:
+                        startActivity(new Intent(MainActivity.this, JetPackActivity.class));
                         break;
                 }
             }

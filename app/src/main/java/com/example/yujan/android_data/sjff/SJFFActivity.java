@@ -1,4 +1,4 @@
-package com.example.yujan.android_data.activity_view;
+package com.example.yujan.android_data.sjff;
 
 import android.os.Bundle;
 import android.util.Log;

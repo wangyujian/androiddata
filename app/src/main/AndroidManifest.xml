@@ -25,6 +25,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".JetPackActivity"
+            android:exported="false" />
+        <activity
             android:name=".CacheListActivity"
             android:exported="false" />
         <activity
@@ -85,10 +88,12 @@
         <activity android:name=".tab.TabListActivity" />
         <activity android:name=".tab.TabType01Activity" />
         <activity android:name=".watermark.WaterMarkActivity" />
-        <activity android:name=".activity_view.ViewActivity" />
-        <activity android:name=".activity_view.SJFFActivity" />
+        <activity android:name=".sjff.ViewActivity" />
+        <activity android:name=".sjff.SJFFActivity" />
         <activity android:name=".cache.CacheListActivity" />
         <activity android:name=".cache.recycler_view.RecyclerViewActivity" />
+        <activity android:name=".jetpack.JetPackActivity"/>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

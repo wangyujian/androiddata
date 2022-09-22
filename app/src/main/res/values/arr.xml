@@ -19,6 +19,7 @@
         <item>布局</item>
         <item>view</item>
         <item>缓存</item>
+        <item>JetPack</item>
     </array>
     <array name="sjms_type">
         <item>无任何架构设计模式</item>

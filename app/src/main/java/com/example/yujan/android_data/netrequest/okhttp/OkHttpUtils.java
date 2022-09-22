@@ -52,7 +52,7 @@ public class OkHttpUtils {
     public static void okhttpPostRequestMethod(String url, String json, OkhttpResponCallBack callBack) {
         try {
             OkHttpClient client = new OkHttpClient();
-            RequestBody body = RequestBody.create(json, JSON);
+            RequestBody body = RequestBody.create(JSON,json);
             Request request = new Request.Builder()
                     .url(url)
                     .post(body)

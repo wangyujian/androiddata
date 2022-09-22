@@ -1,4 +1,4 @@
-package com.example.yujan.android_data.activity_view;
+package com.example.yujan.android_data.sjff;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,7 +8,6 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
 import com.example.yujan.android_data.R;
-import com.example.yujan.android_data.pay.alipay.PayDemoActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;

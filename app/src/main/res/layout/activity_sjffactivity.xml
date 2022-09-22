@@ -5,14 +5,14 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".activity_view.SJFFActivity">
+    tools:context=".sjff.SJFFActivity">
 
-        <com.example.yujan.android_data.activity_view.MyButton
+        <com.example.yujan.android_data.sjff.MyButton
             android:id="@+id/btn"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:text="登录/注册" />
-    <com.example.yujan.android_data.activity_view.MyLayout
+    <com.example.yujan.android_data.sjff.MyLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:background="@color/colorPrimary" />
